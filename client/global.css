@@ -1,0 +1,100 @@
+/** @import must precede all other statements */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 230 26% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 230 26% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 230 26% 12%;
+
+    /* Brand palette */
+    --brand-coral: 14 100% 70%; /* #FF8A65 */
+    --brand-peach: 22 100% 88%;
+    --brand-green: 148 38% 73%;
+
+    /* Semantic mapping */
+    --primary: var(--brand-coral);
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: var(--brand-peach);
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 15 55% 96%;
+    --muted-foreground: 215.4 16.3% 36.9%;
+
+    --accent: var(--brand-green);
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 20 20% 90%;
+    --input: 20 20% 90%;
+    --ring: var(--brand-coral);
+
+    --radius: 1rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: var(--brand-coral);
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: var(--brand-peach);
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 230 26% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 230 26% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 230 26% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 14 95% 72%;
+    --primary-foreground: 230 26% 12%;
+
+    --secondary: 22 80% 20%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 230 26% 16%;
+    --muted-foreground: 215 20.2% 75.1%;
+
+    --accent: 148 38% 45%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 230 26% 22%;
+    --input: 230 26% 22%;
+    --ring: 14 95% 72%;
+
+    --sidebar-background: 230 26% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 14 95% 72%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 230 26% 16%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 230 26% 16%;
+    --sidebar-ring: 14 95% 72%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground font-body antialiased; }
+  h1,h2,h3,h4 { @apply font-heading; }
+}

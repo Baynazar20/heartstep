@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HeartStep — Helping little hearts find their voice</title>
+    <meta name="description" content="HeartStep helps young children build communication skills and confidence through warm, research-backed early-childhood support." />
+    <meta name="theme-color" content="#FF8A65" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="HeartStep — Helping little hearts find their voice" />
+    <meta property="og:description" content="Warm, trustworthy support to help children develop communication skills and confidence." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/" />
+    <meta property="og:image" content="/placeholder.svg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="HeartStep — Helping little hearts find their voice" />
+    <meta name="twitter:description" content="Warm, trustworthy support to help children develop communication skills and confidence." />
+    <meta name="twitter:image" content="/placeholder.svg" />
+    <link rel="icon" href="/placeholder.svg" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.HeartStep = {
+        track: function (event, data) {
+          try { window.dataLayer.push({ event, ...data }); } catch (e) {}
+        },
+      };
+    </script>
+    <script type="module" src="/client/App.tsx"></script>
+  </body>
+</html>
