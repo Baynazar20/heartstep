@@ -76,8 +76,8 @@ export const partners: PartnerLogo[] = [
 
 export const impact: ImpactMetric[] = [
   { id: "i1", label: "Children supported", value: 1240 },
-  { id: "i2", label: "Classrooms engaged", value: 86 },
-  { id: "i3", label: "Volunteer hours", value: 5400 },
+  { id: "i2", label: "Classrooms engaged", value: 1032 },
+  { id: "i3", label: "Volunteer hours", value: 516 },
 ];
 
 export const faqs: FAQItem[] = [
@@ -104,30 +104,38 @@ export const faqs: FAQItem[] = [
 export const team: TeamMember[] = [
   {
     id: "m1",
-    name: "Ayna Kurbanova",
-    role: "Program Director",
-    photoUrl: "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=1200&auto=format&fit=crop",
+    name: "Baynazar Muhammedov",
+    role: "Project Manager",
+    photoUrl: "./baynazar.jpg",
     alt: "Portrait of Program Director in warm light",
   },
   {
     id: "m2",
-    name: "Begench Rejepov",
-    role: "Early Childhood Educator",
+    name: "Jeyhun Jumashov",
+    role: "Content Creator",
     photoUrl: "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=1200&auto=format&fit=crop",
     alt: "Portrait of educator smiling",
   },
   {
     id: "m3",
-    name: "Leyla Orazova",
+    name: "Guljemal Guyjova",
     role: "Speech Therapist",
     photoUrl: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=1200&auto=format&fit=crop",
     alt: "Portrait of therapist",
   },
   {
     id: "m4",
-    name: "Maksat Annayev",
+    name: "Elena Garsula",
     role: "Community Lead",
     photoUrl: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1200&auto=format&fit=crop",
     alt: "Portrait of community lead",
   },
+  {
+    id: "m5",
+    name: "Elena Garsula",
+    role: "Community Lead",
+    photoUrl: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1200&auto=format&fit=crop",
+    alt: "Portrait of community lead",
+  },
+  
 ];

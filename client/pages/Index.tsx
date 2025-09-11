@@ -19,7 +19,7 @@ function chooseVariant() {
   if (stored === "A" || stored === "B") return stored;
   const pick = Math.random() < 0.5 ? "A" : "B";
   localStorage.setItem(key, pick);
-  return pick;
+  return "A";
 }
 
 export default function Index() {
@@ -29,7 +29,7 @@ export default function Index() {
     <div className="min-h-screen">
       <Header />
 
-      {variant === "A" ? <HeroA /> : <HeroB />}
+      <HeroA />
 
 
       <ProblemMission />

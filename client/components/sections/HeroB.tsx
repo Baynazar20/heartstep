@@ -8,10 +8,13 @@ import { FormEvent, useEffect, useState } from "react";
 import { toast } from "sonner";
 
 const screenshots = [
-  "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=800&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=800&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1545235617-9465d2a55698?q=80&w=800&auto=format&fit=crop",
+  "./1000028491.jpg",
+  "./Screenshot_20250910_180308.jpg",
+  "./Screenshot_20250910_180308.jpg",
 ];
+
+const PLAY_URL = import.meta.env.VITE_PLAY_URL ?? "https://play.google.com/store/search?q=HeartStep&c=apps";
+const GUIDE_URL = import.meta.env.VITE_GUIDE_URL ?? "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf";
 
 export default function HeroB() {
   const { t } = useI18n();
@@ -65,8 +68,8 @@ export default function HeroB() {
             <Button
               className="bg-primary text-primary-foreground hover:bg-primary/90"
               onClick={() => {
-                track("cta_click", { id: "heroB_join" });
-                setJoinOpen(true);
+                track("cta_click", { id: "heroB_play" });
+                window.open(PLAY_URL, "_blank", "noopener,noreferrer");
               }}
             >
               {t("hero.play")}
@@ -75,8 +78,15 @@ export default function HeroB() {
               variant="outline"
               className="border-primary/30 text-primary hover:bg-secondary"
               onClick={() => {
-                track("cta_click", { id: "heroB_support" });
-                setSupportOpen(true);
+                track("cta_click", { id: "heroB_parents_guide" });
+                const a = document.createElement("a");
+                a.href = GUIDE_URL;
+                a.download = "HeartStep-Parents-Guide.pdf";
+                a.target = "_blank";
+                a.rel = "noopener";
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
               }}
             >
               {t("hero.parentsGuide")}

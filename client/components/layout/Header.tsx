@@ -8,7 +8,7 @@ export default function Header() {
       <div className="container flex h-16 items-center justify-between">
         <a href="/" aria-label="HeartStep home" className="flex items-center gap-2">
           <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand-coral/20 text-primary">
-            ❤️
+            <img src="./logo.png" alt="" />
           </span>
           <span className="font-heading text-lg font-semibold tracking-tight">{t("common.brand")}</span>
         </a>
