@@ -13,42 +13,42 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "t2",
-    name: "Luis",
+    name: "Aleksandra",
     role: "Early Childhood Educator",
     quote:
       "The tools are practical and caring. I see quieter children participating more every week.",
     photoUrl:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop",
+      "./parent1.jpg",
     alt: "Teacher smiling in a classroom setting",
   },
   {
     id: "t3",
-    name: "Sofia",
+    name: "Merjen",
     role: "Speech Therapist",
     quote:
       "A warm, evidence-based approach that meets families where they are. Highly recommend.",
     photoUrl:
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop",
+      "./parent2.jpg",
     alt: "Therapist smiling with natural light",
   },
   {
     id: "t4",
-    name: "Dilan",
+    name: "Sona",
     role: "Parent",
     quote:
       "Our son now initiates conversations at dinner. Small, consistent steps made a big difference.",
     photoUrl:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop",
+      "./parent3.jpg",
     alt: "Parent smiling at home in warm light",
   },
   {
     id: "t5",
-    name: "Mira",
+    name: "Muhammet",
     role: "Kindergarten Teacher",
     quote:
       "HeartStep’s playful routines helped my quieter students connect with peers joyfully.",
     photoUrl:
-      "https://images.unsplash.com/photo-1544005316-04bfbf0b9799?q=80&w=800&auto=format&fit=crop",
+      "./parent4.jpg",
     alt: "Teacher portrait with soft light",
   },
 ];
@@ -75,9 +75,9 @@ export const partners: PartnerLogo[] = [
 ];
 
 export const impact: ImpactMetric[] = [
-  { id: "i1", label: "Children supported", value: 1240 },
-  { id: "i2", label: "Classrooms engaged", value: 1032 },
-  { id: "i3", label: "Volunteer hours", value: 516 },
+  { id: "i1", label: "Number of Cards", value: +200 },
+  { id: "i2", label: "number of specialists", value: 12 },
+  { id: "i3", label: "Volunteer hours", value: 312 },
 ];
 
 export const faqs: FAQItem[] = [
@@ -113,29 +113,22 @@ export const team: TeamMember[] = [
     id: "m2",
     name: "Jeyhun Jumashov",
     role: "Content Creator",
-    photoUrl: "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=1200&auto=format&fit=crop",
+    photoUrl: "./Jeyhun_Jumashov.jpg",
     alt: "Portrait of educator smiling",
   },
   {
     id: "m3",
-    name: "Guljemal Guyjova",
+    name: "Aygul Sayilova",
     role: "Speech Therapist",
-    photoUrl: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=1200&auto=format&fit=crop",
+    photoUrl: "./aygul.jpg",
     alt: "Portrait of therapist",
   },
   {
     id: "m4",
     name: "Elena Garsula",
     role: "Community Lead",
-    photoUrl: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1200&auto=format&fit=crop",
-    alt: "Portrait of community lead",
-  },
-  {
-    id: "m5",
-    name: "Elena Garsula",
-    role: "Community Lead",
-    photoUrl: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1200&auto=format&fit=crop",
-    alt: "Portrait of community lead",
+    photoUrl: "./yelena.jpg",
+    alt: "Сhild psychologist",
   },
   
 ];

@@ -55,7 +55,7 @@ export default function ContactNewsletter() {
           </form>
           <div className="mt-6">
             <img
-              src="https://images.unsplash.com/photo-1600880292089-90e6a0a9636e?q=80&w=1200&auto=format&fit=crop"
+              src="./yurekgadamy.png"
               alt="Caregiver reading with child in warm light"
               className="w-full rounded-lg border object-cover"
             />
