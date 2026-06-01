@@ -42,7 +42,7 @@ export default function Footer() {
         <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
           <div>
             <div className="flex items-center gap-2">
-              <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand-coral/20 text-primary">❤️</span>
+              <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand-coral/20 text-primary"><img src="./logo.png" alt="" /></span>
               <span className="font-heading text-lg font-semibold">{t("common.brand")}</span>
             </div>
             <p className="mt-2 max-w-md text-sm text-muted-foreground">

@@ -21,11 +21,12 @@ function useCountUp(target: number, duration = 1200) {
 }
 
 const chartData = [
-  { name: "W1", value: 20 },
-  { name: "W2", value: 35 },
-  { name: "W3", value: 42 },
-  { name: "W4", value: 56 },
-  { name: "W5", value: 68 },
+  { name: "M1", value: 10 },
+  { name: "M2", value: 35 },
+  { name: "M3", value: 52 },
+  { name: "M4", value: 100 },
+  { name: "M5", value: 160 },
+  { name: "M5", value: 300 },
 ];
 
 export default function Impact() {

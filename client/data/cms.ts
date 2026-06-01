@@ -1,4 +1,4 @@
-import { FAQItem, ImpactMetric, PartnerLogo, Testimonial, TeamMember } from "@shared/api";
+import { EventCard, FAQItem, ImpactMetric, PartnerLogo, Testimonial, TeamMember } from "@shared/api";
 
 export const testimonials: Testimonial[] = [
   {
@@ -75,7 +75,7 @@ export const partners: PartnerLogo[] = [
 ];
 
 export const impact: ImpactMetric[] = [
-  { id: "i1", label: "Number of Cards", value: +200 },
+  { id: "i1", label: "Number of Cards", value: +300 },
   { id: "i2", label: "number of specialists", value: 12 },
   { id: "i3", label: "Volunteer hours", value: 312 },
 ];
@@ -101,6 +101,66 @@ export const faqs: FAQItem[] = [
   },
 ];
 
+export const events: EventCard[] = [
+  {
+    id: "sep-24-28",
+    dateLabel: "Sep 24–28",
+    location: "Malaysia",
+    title: "Regional outreach week",
+    imageUrl:
+      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=800&auto=format&fit=crop",
+    imageAlt: "Community gathering in warm daylight",
+  },
+  {
+    id: "oct-3-4",
+    dateLabel: "Oct 3–4",
+    location: "Kazakhstan",
+    title: "Family communication workshop",
+    imageUrl:
+      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=800&auto=format&fit=crop",
+    imageAlt: "Educators and families in a bright classroom",
+  },
+  {
+    id: "oct-26-28",
+    dateLabel: "Oct 26–28",
+    location: "Colombia",
+    title: "Inclusive education exchange",
+    imageUrl:
+      "https://images.unsplash.com/photo-1427504494784-3ccca1d1f3f0?q=80&w=800&auto=format&fit=crop",
+    imageAlt: "Collaborative learning session outdoors",
+  },
+  // TODO: replace with real event title/date/location/image
+  {
+    id: "placeholder-1",
+    dateLabel: "TBA",
+    location: "Central Asia",
+    title: "HeartStep community meetup",
+    imageUrl:
+      "https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=800&auto=format&fit=crop",
+    imageAlt: "Families connecting in a friendly community space",
+  },
+  // TODO: replace with real event title/date/location/image
+  {
+    id: "placeholder-2",
+    dateLabel: "TBA",
+    location: "TBA",
+    title: "PECS practice day for parents",
+    imageUrl:
+      "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop",
+    imageAlt: "Calm classroom with learning materials",
+  },
+  // TODO: replace with real event title/date/location/image
+  {
+    id: "placeholder-3",
+    dateLabel: "TBA",
+    location: "TBA",
+    title: "Educator training session",
+    imageUrl:
+      "https://images.unsplash.com/photo-1497633760183-786a060b4a94?q=80&w=800&auto=format&fit=crop",
+    imageAlt: "Books and materials on a bright table",
+  },
+];
+
 export const team: TeamMember[] = [
   {
     id: "m1",
@@ -118,10 +178,10 @@ export const team: TeamMember[] = [
   },
   {
     id: "m3",
-    name: "Aygul Sayilova",
-    role: "Speech Therapist",
-    photoUrl: "./aygul.jpg",
-    alt: "Portrait of therapist",
+    name: "Dr. Giuseppe Chiaramonte",
+    role: "Global Educator & Speaker",
+    photoUrl: "./giuseppe.jpg",
+    alt: "Global Educator & Speaker",
   },
   {
     id: "m4",

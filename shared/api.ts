@@ -48,3 +48,14 @@ export interface FAQItem {
   question: string;
   answer: string;
 }
+
+export interface EventCard {
+  id: string;
+  dateLabel: string;
+  location: string;
+  title: string;
+  imageUrl: string;
+  imageAlt: string;
+  /** Optional external link for "Read more" */
+  href?: string;
+}

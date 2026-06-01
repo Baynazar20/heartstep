@@ -7,7 +7,8 @@ import HowItWorks from "@/components/sections/HowItWorks";
 import Benefits from "@/components/sections/Benefits";
 import Testimonials from "@/components/sections/Testimonials";
 import Impact from "@/components/sections/Impact";
-import WaysToHelp from "@/components/sections/WaysToHelp";
+import EventsSection from "@/components/sections/EventsSection";
+import PecsGenerator from "@/components/sections/PecsGenerator";
 import TeamMembers from "@/components/sections/TeamMembers";
 import FAQ from "@/components/sections/FAQ";
 import ContactNewsletter from "@/components/sections/ContactNewsletter";
@@ -37,7 +38,8 @@ export default function Index() {
       <Benefits />
       <Testimonials />
       <Impact />
-      <WaysToHelp />
+      <EventsSection />
+      <PecsGenerator />
       <TeamMembers />
       <FAQ />
       <ContactNewsletter />

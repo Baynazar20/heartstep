@@ -25,7 +25,7 @@ export default function ContactNewsletter() {
   };
 
   return (
-    <section className="container px-8 py-[50px]">
+    <section id="contact" className="container px-8 py-[50px]">
       <div className="grid gap-8 lg:grid-cols-2">
         <div className="rounded-xl border bg-card p-6 shadow-sm">
           <h3 className="font-heading text-2xl font-semibold">{t("contact.heading")}</h3>
